@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>HTML PROJECT</title>
+    <link rel ="stylesheet" href="projcss.css" />
+
+</head>
+<body>
+
+<!-- header -->  
+<div class="container">
+    <div class="navbar">
+      <img src="https://th.bing.com/th/id/R.317d613ae3a5691bb26e1d77624fe6ef?rik=dFAp3UqEnAWXdg&pid=ImgRaw&r=0" alt="logo" class="logo" >
+      <nav>
+          <ul>
+              <li><a href=""> Home</a></li>
+              <li><a href=""> About</a></li>
+              <li><a href=""> Location</a></li>
+          </ul>
+      </nav>
+      <p class="timelogo"><span id="time"> </span></p>  
+
+
+
+      <script> // javascript for time
+          var datetime = new Date();
+             console.log(datetime);
+             document.getElementById("time").textContent = datetime; //it will print on html page 
+             function refreshTime() {
+             const timeDisplay = document.getElementById("time");
+             const dateString = new Date().toLocaleString();
+             const formattedString = dateString.replace(", ", " - ");
+             timeDisplay.textContent = formattedString;
+                                   }
+             setInterval(refreshTime); 
+          </script>
+
+        </div>
+  </div>
+  <hr color="black" size="1" /> <!-- creating black line  -->
+
+
+  <div class="content"> <!-- bio  -->
+    <img class="img-circle" src="https://i.pinimg.com/originals/0b/30/b5/0b30b558d728099473fb7dd00605a25b.gif" alt="" width="200cm" style="float:left">
+    <h2> Cats !!</h2>
+    <p>The cat (Felis catus) is a domestic species of small carnivorous mammal.
+        It is the only domesticated species in the family Felidae and is often 
+        referred to as the domestic cat to distinguish it from the wild members of the family. 
+         A cat can either be a house cat, a farm cat, or a feral cat;  the latter ranges freely and avoids human contact.</p>
+  </div>
+  
+
+
+
+    <div class="circles"> <!-- background animation ceirlc -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>  
+
+    <hr color="black" size="2" width="400" /> <!-- creating black line  -->
+
+
+ <div class="slidershow middle" > <!-- this div for the slide show -->
+
+    <div class="slides" >
+        <input type="radio" name="r" id="r1" checked>
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+        <input type="radio" name="r" id="r5">
+        <input type="radio" name="r" id="r6">
+        <input type="radio" name="r" id="r7">
+
+        <div class ="slide s1">
+            <img src="https://www.thesprucepets.com/thmb/AlsaZ1vMyplHqJkbe-iKeyzJwRY=/4368x2912/filters:fill(auto,1)/burmese-cat-love-85151671-5c87d723c9e77c0001a3e5ae.jpg" alt="">
+        </div>
+        <div class ="slide">
+            <img src="https://wallup.net/wp-content/uploads/2019/09/162702-cat-eyes-pet.jpg" alt="" >
+        </div>
+        <div class ="slide">
+            <img src="https://2.bp.blogspot.com/_LDF9z4ZzZHo/TP__vW9O3mI/AAAAAAAAAEg/XNK0nLmM_Tk/s1600/1600cat_5008.jpg" alt="">
+        </div>
+        <div class ="slide">
+            <img src="https://www.hdnicewallpapers.com/Walls/Big/Cat/Pretty_Cat_Pic_Download.jpg" alt="">
+        </div>
+        <div class ="slide">
+            <img src="https://i.pinimg.com/236x/f9/30/dc/f930dc3d99595ab7faff81bf7dd86405.jpg" alt="">
+        </div>
+        <div class ="slide">
+            <img src="https://media.npr.org/assets/img/2021/08/17/gettyimages-135773550-bb02ff79dd836d6e4170d4bc555423f24fa29d5e-s1100-c50.jpg" alt="">
+        </div>
+        <div class ="slide">
+            <img src="https://animalia-life.com/data_images/havana-brown-cat/havana-brown-cat9.jpg" alt="">
+        </div>
+    </div>
+   
+    <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+        <label for="r5" class="bar"></label>
+        <label for="r6" class="bar"></label>
+        <label for="r7" class="bar"></label>
+
+    </div>
+
+ </div>
+
+
+</body>
+</html>
